@@ -1,0 +1,110 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  header {
+    background-color: #ff7300; /* Dark gray background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  /* Mystery Box Section */
+  
+  #mystery-box {
+    background-color: #4431f1; /* Darker gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #mystery-box button {
+    background-color: #ff4141; /* Dark gray button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #mystery-box button:hover {
+    background-color: #777; /* Darker gray button on hover */
+  }
+  
+  #mystery-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+/* Message Container */
+
+#message-container {
+    background-color: #F7D2C4; /* Warm beige background, reminiscent of a birthday card */
+    padding: 30px; /* Increased padding to make it look more like a card */
+    border-radius: 20px; /* Softer, more rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Hide the message container initially */
+  }
+  
+  #message-container.show {
+    display: block; /* Show the message container when the surprise message is revealed */
+  }
+  
+  #message-container p {
+    font-size: 22px; /* Larger font size to make the message more prominent */
+    font-family: 'Pacifico', cursive; /* A playful, cursive font to match the birthday theme */
+    color: #333; /* Darker text color to contrast with the light background */
+    margin-bottom: 30px; /* Increased margin to create more space between elements */
+  }
+  
+  /* Add some birthday-themed decorations */
+  
+  #message-container:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent #F7D2C4 transparent;
+  }
+  
+  #message-container:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #F7D2C4 transparent transparent transparent;
+  }
